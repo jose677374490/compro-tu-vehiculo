@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Compro su vehículo - Al mejor precio garantizado</title>
+  <meta name="description" content="Compro su vehículo sin garantías, sin ITV, averiado. Envíe fotos por WhatsApp y reciba la mejor oferta garantizada." />
+  <style>
+    :root {
+      --color-bg: #f5f7fa;
+      --color-primary: #10b981;
+      --color-dark: #0f172a;
+      --color-muted: #64748b;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+      background: var(--color-bg);
+      color: var(--color-dark);
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(90deg, #0f172a, #1e293b);
+      color: white;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header img {
+      height: 50px;
+    }
+    header h1 { font-size: 20px; }
+    .hero {
+      text-align: center;
+      padding: 50px 20px;
+      background: linear-gradient(180deg, #10b981, #059669);
+      color: white;
+    }
+    .hero h2 { font-size: 32px; margin-bottom: 20px; }
+    .hero p { font-size: 18px; margin-bottom: 25px; }
+    .hero a {
+      background: white;
+      color: #059669;
+      text-decoration: none;
+      padding: 14px 22px;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .hero a:hover { background: #f0fdf4; }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .feature {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+    .feature img { width: 80px; margin-bottom: 15px; }
+    .feature h3 { margin-bottom: 10px; }
+    footer {
+      background: #0f172a;
+      color: #94a3b8;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div style="display:flex;align-items:center;gap:10px">
+      <img src="logo.png" alt="Compro su vehículo" />
+      <h1>Compro su vehículo</h1>
+    </div>
+    <div>
+      <strong>WhatsApp: +34 677 374 490</strong>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h2>¡Vendemos su coche al mejor precio garantizado!</h2>
+    <p>Compramos coches <strong>sin ITV</strong>, <strong>averiados</strong> o <strong>sin garantía</strong>. Envíenos unas fotos y reciba una oferta en minutos.</p>
+    <a href="https://wa.me/34677374490?text=Hola%2C%20quiero%20vender%20mi%20veh%C3%ADculo.%20Adjunto%20fotos." target="_blank">📲 Enviar fotos por WhatsApp</a>
+  </section>
+
+  <section class="features">
+    <div class="feature">
+      <img src="https://cdn-icons-png.flaticon.com/512/3202/3202926.png" alt="Proceso sencillo" />
+      <h3>Proceso sencillo</h3>
+      <p>Solo envíe fotos por WhatsApp, sin papeleos complicados.</p>
+    </div>
+    <div class="feature">
+      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135706.png" alt="Pago rápido" />
+      <h3>Pago inmediato</h3>
+      <p>Reciba su dinero al contado o por transferencia bancaria.</p>
+    </div>
+    <div class="feature">
+      <img src="https://cdn-icons-png.flaticon.com/512/1048/1048313.png" alt="Recogida incluida" />
+      <h3>Recogida incluida</h3>
+      <p>Vamos a buscar el vehículo donde se encuentre (opcional).</p>
+    </div>
+  </section>
+
+  <footer>
+    © <span id="year"></span> Compro su vehículo — Mejor precio garantizado. | Privacidad: no compartimos sus fotos sin permiso.
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
